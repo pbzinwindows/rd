@@ -1,0 +1,83 @@
+.class public final Lcom/google/android/gms/internal/firebase-auth-api/zzagm;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# instance fields
+.field private final zza:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotEmpty(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzagm;->zza:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+.end method
+
+
+# virtual methods
+.method public final zza()Lorg/json/JSONObject;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lorg/json/JSONObject;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "appSignatureHash"
+
+    .line 7
+    .line 8
+    iget-object p0, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzagm;->zza:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 11
+    .line 12
+    .line 13
+    return-object v0
+    .line 14
+    .line 15
+.end method

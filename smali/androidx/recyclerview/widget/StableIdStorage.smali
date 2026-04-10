@@ -1,0 +1,14 @@
+.class interface abstract Landroidx/recyclerview/widget/StableIdStorage;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/recyclerview/widget/StableIdStorage$IsolatedStableIdStorage;,
+        Landroidx/recyclerview/widget/StableIdStorage$SharedPoolStableIdStorage;,
+        Landroidx/recyclerview/widget/StableIdStorage$NoStableIdStorage;,
+        Landroidx/recyclerview/widget/StableIdStorage$StableIdLookup;
+    }
+.end annotation

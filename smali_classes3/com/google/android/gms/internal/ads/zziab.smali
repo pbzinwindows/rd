@@ -1,0 +1,533 @@
+.class public final Lcom/google/android/gms/internal/ads/zziab;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzhps;
+
+
+# instance fields
+.field private final zza:Ljava/lang/ThreadLocal;
+
+.field private final zzb:Ljava/lang/String;
+
+.field private final zzc:Ljava/security/Key;
+
+.field private final zzd:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/security/Key;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lcom/google/android/gms/internal/ads/zziaa;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/ads/zziaa;-><init>(Lcom/google/android/gms/internal/ads/zziab;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zziab;->zza:Ljava/lang/ThreadLocal;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x2
+
+    .line 12
+    invoke-static {v1}, Lcom/google/android/gms/internal/ads/zzhkh;->zza(I)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    if-eqz v1, :cond_2
+
+    .line 17
+    .line 18
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zziab;->zzb:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zziab;->zzc:Ljava/security/Key;
+
+    .line 21
+    .line 22
+    invoke-interface {p2}, Ljava/security/Key;->getEncoded()[B
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p2
+
+    .line 26
+    array-length p2, p2
+
+    .line 27
+    const/16 v1, 0x10
+
+    .line 28
+    .line 29
+    if-lt p2, v1, :cond_1
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result p2
+
+    .line 35
+    sparse-switch p2, :sswitch_data_0
+
+    .line 36
+    .line 37
+    .line 38
+    goto :goto_1
+
+    .line 39
+    :sswitch_0
+    const-string p2, "HMACSHA512"
+
+    .line 40
+    .line 41
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result p2
+
+    .line 45
+    if-eqz p2, :cond_0
+
+    .line 46
+    .line 47
+    const/16 p1, 0x40
+
+    .line 48
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :sswitch_1
+    const-string p2, "HMACSHA384"
+
+    .line 51
+    .line 52
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 53
+    .line 54
+    .line 55
+    move-result p2
+
+    .line 56
+    if-eqz p2, :cond_0
+
+    .line 57
+    .line 58
+    const/16 p1, 0x30
+
+    .line 59
+    .line 60
+    goto :goto_0
+
+    .line 61
+    :sswitch_2
+    const-string p2, "HMACSHA256"
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result p2
+
+    .line 67
+    if-eqz p2, :cond_0
+
+    .line 68
+    .line 69
+    const/16 p1, 0x20
+
+    .line 70
+    .line 71
+    goto :goto_0
+
+    .line 72
+    :sswitch_3
+    const-string p2, "HMACSHA224"
+
+    .line 73
+    .line 74
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 75
+    .line 76
+    .line 77
+    move-result p2
+
+    .line 78
+    if-eqz p2, :cond_0
+
+    .line 79
+    .line 80
+    const/16 p1, 0x1c
+
+    .line 81
+    .line 82
+    goto :goto_0
+
+    .line 83
+    :sswitch_4
+    const-string p2, "HMACSHA1"
+
+    .line 84
+    .line 85
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 86
+    .line 87
+    .line 88
+    move-result p2
+
+    .line 89
+    if-eqz p2, :cond_0
+
+    .line 90
+    .line 91
+    const/16 p1, 0x14
+
+    .line 92
+    .line 93
+    :goto_0
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zziab;->zzd:I
+
+    .line 94
+    .line 95
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    .line 96
+    .line 97
+    .line 98
+    return-void
+
+    .line 99
+    :cond_0
+    :goto_1
+    const-string p0, "unknown Hmac algorithm: "
+
+    .line 100
+    .line 101
+    invoke-virtual {p0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object p0
+
+    .line 105
+    new-instance p1, Ljava/security/NoSuchAlgorithmException;
+
+    .line 106
+    .line 107
+    invoke-direct {p1, p0}, Ljava/security/NoSuchAlgorithmException;-><init>(Ljava/lang/String;)V
+
+    .line 108
+    .line 109
+    .line 110
+    throw p1
+
+    .line 111
+    :cond_1
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
+
+    .line 112
+    .line 113
+    const-string p1, "key size too small, need at least 16 bytes"
+
+    .line 114
+    .line 115
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    .line 116
+    .line 117
+    .line 118
+    throw p0
+
+    .line 119
+    :cond_2
+    const-string p0, "Can not use HMAC in FIPS-mode, as BoringCrypto module is not available."
+
+    .line 120
+    .line 121
+    invoke-static {p0}, Lsr;->o(Ljava/lang/String;)V
+
+    .line 122
+    .line 123
+    .line 124
+    const/4 p0, 0x0
+
+    .line 125
+    throw p0
+
+    .line 126
+    nop
+
+    .line 127
+    :sswitch_data_0
+    .sparse-switch
+        -0x6ca99674 -> :sswitch_4
+        0x1762408f -> :sswitch_3
+        0x176240ee -> :sswitch_2
+        0x1762450a -> :sswitch_1
+        0x17624bb1 -> :sswitch_0
+    .end sparse-switch
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+.end method
+
+
+# virtual methods
+.method public final zza([BI)[B
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zziab;->zzd:I
+
+    .line 2
+    .line 3
+    if-gt p2, v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zziab;->zza:Ljava/lang/ThreadLocal;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    check-cast v0, Ljavax/crypto/Mac;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p1}, Ljavax/crypto/Mac;->update([B)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    check-cast p0, Ljavax/crypto/Mac;
+
+    .line 21
+    .line 22
+    invoke-virtual {p0}, Ljavax/crypto/Mac;->doFinal()[B
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    invoke-static {p0, p2}, Ljava/util/Arrays;->copyOf([BI)[B
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    return-object p0
+
+    .line 31
+    :cond_0
+    new-instance p0, Ljava/security/InvalidAlgorithmParameterException;
+
+    .line 32
+    .line 33
+    const-string p1, "tag size too big"
+
+    .line 34
+    .line 35
+    invoke-direct {p0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    .line 36
+    .line 37
+    .line 38
+    throw p0
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+.end method
+
+.method public final synthetic zzb()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zziab;->zzb:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method
+
+.method public final synthetic zzc()Ljava/security/Key;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zziab;->zzc:Ljava/security/Key;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method

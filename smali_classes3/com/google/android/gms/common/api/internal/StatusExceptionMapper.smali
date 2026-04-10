@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/google/android/gms/common/api/internal/StatusExceptionMapper;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# annotations
+.annotation build Lcom/google/android/gms/common/annotation/KeepForSdk;
+.end annotation
+
+
+# virtual methods
+.method public abstract getException(Lcom/google/android/gms/common/api/Status;)Ljava/lang/Exception;
+    .param p1    # Lcom/google/android/gms/common/api/Status;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Lcom/google/android/gms/common/annotation/KeepForSdk;
+    .end annotation
+.end method

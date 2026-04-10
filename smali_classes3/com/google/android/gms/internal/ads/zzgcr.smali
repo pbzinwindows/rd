@@ -1,0 +1,81 @@
+.class final Lcom/google/android/gms/internal/ads/zzgcr;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzimr;
+
+
+# instance fields
+.field final synthetic zza:Lcom/google/android/gms/internal/ads/zzgcu;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzgcu;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzgcr;->zza:Lcom/google/android/gms/internal/ads/zzgcu;
+
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic zzb()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zzgcr;->zza:Lcom/google/android/gms/internal/ads/zzgcu;
+
+    .line 2
+    .line 3
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzgcy;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzgcu;->zza()Lcom/google/android/gms/internal/ads/zzgcu;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    invoke-direct {v0, p0, v1}, Lcom/google/android/gms/internal/ads/zzgcy;-><init>(Lcom/google/android/gms/internal/ads/zzgcu;[B)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object v0
+    .line 14
+    .line 15
+.end method

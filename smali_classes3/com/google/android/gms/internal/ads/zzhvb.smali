@@ -1,0 +1,101 @@
+.class public final Lcom/google/android/gms/internal/ads/zzhvb;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# static fields
+.field public static final zza:Lcom/google/android/gms/internal/ads/zzhvb;
+
+
+# instance fields
+.field private final zzb:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzhvb;
+
+    .line 2
+    .line 3
+    const-string v1, "ML_DSA_65"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzhvb;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lcom/google/android/gms/internal/ads/zzhvb;->zza:Lcom/google/android/gms/internal/ads/zzhvb;
+
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method
+
+.method private constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const-string p1, "ML_DSA_65"
+
+    .line 5
+    .line 6
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzhvb;->zzb:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/internal/ads/zzhvb;->zzb:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method

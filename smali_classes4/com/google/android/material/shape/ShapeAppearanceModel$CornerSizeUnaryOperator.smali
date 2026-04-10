@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/google/android/material/shape/ShapeAppearanceModel$CornerSizeUnaryOperator;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# annotations
+.annotation build Landroidx/annotation/RestrictTo;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/shape/ShapeAppearanceModel;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "CornerSizeUnaryOperator"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lcom/google/android/material/shape/CornerSize;)Lcom/google/android/material/shape/CornerSize;
+.end method

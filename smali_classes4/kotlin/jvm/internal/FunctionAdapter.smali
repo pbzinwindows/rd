@@ -1,0 +1,13 @@
+.class public interface abstract Lkotlin/jvm/internal/FunctionAdapter;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# annotations
+.annotation build Lkotlin/SinceKotlin;
+.end annotation
+
+
+# virtual methods
+.method public abstract getFunctionDelegate()Lkotlin/Function;
+.end method

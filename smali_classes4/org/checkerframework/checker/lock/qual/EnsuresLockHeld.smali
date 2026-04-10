@@ -1,0 +1,38 @@
+.class public interface abstract annotation Lorg/checkerframework/checker/lock/qual/EnsuresLockHeld;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/checkerframework/checker/lock/qual/EnsuresLockHeld$List;
+    }
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Documented;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Repeatable;
+    value = Lorg/checkerframework/checker/lock/qual/EnsuresLockHeld$List;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Target;
+    value = {
+        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;,
+        .enum Ljava/lang/annotation/ElementType;->CONSTRUCTOR:Ljava/lang/annotation/ElementType;
+    }
+.end annotation
+
+.annotation runtime Lorg/checkerframework/framework/qual/InheritedAnnotation;
+.end annotation
+
+.annotation runtime Lorg/checkerframework/framework/qual/PostconditionAnnotation;
+.end annotation

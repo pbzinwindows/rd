@@ -1,0 +1,61 @@
+.class public final Ldagger/internal/MapProviderFactory;
+.super Ldagger/internal/AbstractMapFactory;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+# interfaces
+.implements Ldagger/Lazy;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ldagger/internal/MapProviderFactory$Builder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ldagger/internal/AbstractMapFactory<",
+        "TK;TV;",
+        "Ldagger/internal/Provider<",
+        "TV;>;>;",
+        "Ldagger/Lazy<",
+        "Ljava/util/Map<",
+        "TK;",
+        "Ldagger/internal/Provider<",
+        "TV;>;>;>;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public final bridge synthetic get()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method

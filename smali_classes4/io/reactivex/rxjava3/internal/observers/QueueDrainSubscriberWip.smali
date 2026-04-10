@@ -1,0 +1,41 @@
+.class Lio/reactivex/rxjava3/internal/observers/QueueDrainSubscriberWip;
+.super Lio/reactivex/rxjava3/internal/observers/QueueDrainSubscriberPad0;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/observers/QueueDrainSubscriberWip;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 10
+    .line 11
+    return-void
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method

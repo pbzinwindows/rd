@@ -1,0 +1,164 @@
+.class final Lokio/AsyncTimeout$Watchdog;
+.super Ljava/lang/Thread;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lokio/AsyncTimeout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Watchdog"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001\u00a8\u0006\u0002"
+    }
+    d2 = {
+        "Lokio/AsyncTimeout$Watchdog;",
+        "Ljava/lang/Thread;",
+        "okio"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    :catch_0
+    :cond_0
+    :goto_0
+    :try_start_0
+    sget-object p0, Lokio/AsyncTimeout;->h:Lokio/PriorityQueue;
+
+    .line 2
+    .line 3
+    sget-object p0, Lokio/AsyncTimeout;->j:Ljava/util/concurrent/locks/ReentrantLock;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 6
+    .line 7
+    .line 8
+    :try_start_1
+    invoke-static {}, Lokio/AsyncTimeout$Companion;->b()Lokio/AsyncTimeout;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    sget-object v1, Lokio/AsyncTimeout;->i:Lokio/AsyncTimeout;
+
+    .line 13
+    .line 14
+    if-ne v0, v1, :cond_1
+
+    .line 15
+    .line 16
+    const/4 v0, 0x0
+
+    .line 17
+    sput-object v0, Lokio/AsyncTimeout;->i:Lokio/AsyncTimeout;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 18
+    .line 19
+    :try_start_2
+    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+
+    .line 23
+    :catchall_0
+    move-exception v0
+
+    .line 24
+    goto :goto_1
+
+    .line 25
+    :cond_1
+    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    .line 26
+    .line 27
+    .line 28
+    if-eqz v0, :cond_0
+
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Lokio/AsyncTimeout;->l()V
+
+    .line 31
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :goto_1
+    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    .line 35
+    .line 36
+    .line 37
+    throw v0
+    :try_end_2
+    .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_0
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+.end method

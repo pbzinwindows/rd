@@ -1,0 +1,18 @@
+.class public interface abstract Lcom/google/android/datatransport/runtime/retries/Function;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<TInput:",
+        "Ljava/lang/Object;",
+        "TResult:",
+        "Ljava/lang/Object;",
+        "TException:",
+        "Ljava/lang/Throwable;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation

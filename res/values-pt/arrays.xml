@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dias">
+        <item>1 dia</item>
+        <item>7 dias</item>
+        <item>15 dias</item>
+        <item>30 dias</item>
+    </string-array>
+</resources>

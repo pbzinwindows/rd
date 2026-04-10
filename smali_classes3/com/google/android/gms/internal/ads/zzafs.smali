@@ -1,0 +1,47 @@
+.class public interface abstract Lcom/google/android/gms/internal/ads/zzafs;
+.super Ljava/lang/Object;
+.source "r8-map-id-aacf262dd7776af78cbaaf660000bd4ef589eb80ecead6da489d62e6c03fe84c"
+
+
+# static fields
+.field public static final zza:Lcom/google/android/gms/internal/ads/zzafs;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzafr;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzafr;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/google/android/gms/internal/ads/zzafs;->zza:Lcom/google/android/gms/internal/ads/zzafs;
+
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method
+
+
+# virtual methods
+.method public abstract zzu(II)Lcom/google/android/gms/internal/ads/zzahb;
+.end method
+
+.method public abstract zzv()V
+.end method
+
+.method public abstract zzw(Lcom/google/android/gms/internal/ads/zzags;)V
+.end method
