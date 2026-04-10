@@ -432,7 +432,7 @@
     .line 35
     .line 36
     .line 37
-    move-result v2
+    const/4 v2, 0x1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

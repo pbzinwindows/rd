@@ -520,11 +520,6 @@
         <meta-data
             android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
             android:value="true" />
-        <provider
-            android:name="com.applovin.sdk.AppLovinInitProvider"
-            android:exported="false"
-            android:authorities="com.random.chat.app.applovininitprovider"
-            android:initOrder="101" />
         <activity
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:name="com.applovin.adview.AppLovinFullscreenActivity"

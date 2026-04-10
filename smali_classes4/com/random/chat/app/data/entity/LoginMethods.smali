@@ -4063,7 +4063,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p0, p0, Lcom/random/chat/app/data/entity/LoginMethods;->isApiIntegrity:Z
+    const/4 p0, 0x0
 
     .line 2
     .line 3
@@ -4141,7 +4141,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p0, p0, Lcom/random/chat/app/data/entity/LoginMethods;->isPlayAgeSignals:Z
+    const/4 p0, 0x0
 
     .line 2
     .line 3

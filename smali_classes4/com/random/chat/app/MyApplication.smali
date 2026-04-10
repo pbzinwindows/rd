@@ -495,56 +495,9 @@
 .end method
 
 .method private final initializeAdsSdks()V
-    .locals 2
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/random/chat/app/MyApplication;->getAdsUseCase()Lcom/random/chat/app/data/usecase/AdsUseCase;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Lcom/random/chat/app/data/usecase/AdsUseCase;->getRequestConfiguration()Lcom/google/android/gms/ads/RequestConfiguration;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    invoke-static {v0}, Lcom/google/android/gms/ads/MobileAds;->setRequestConfiguration(Lcom/google/android/gms/ads/RequestConfiguration;)V
-
-    .line 10
-    .line 11
-    .line 12
-    sget-object v0, Lcom/random/chat/app/MyApplication;->Companion:Lcom/random/chat/app/MyApplication$Companion;
-
-    .line 13
-    .line 14
-    invoke-virtual {v0}, Lcom/random/chat/app/MyApplication$Companion;->getInstance()Lcom/random/chat/app/MyApplication;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    new-instance v1, Lxh;
-
-    .line 19
-    .line 20
-    invoke-direct {v1, p0}, Lxh;-><init>(Lcom/random/chat/app/MyApplication;)V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-static {v0, v1}, Lcom/google/android/gms/ads/MobileAds;->initialize(Landroid/content/Context;Lcom/google/android/gms/ads/initialization/OnInitializationCompleteListener;)V
-
-    .line 24
-    .line 25
-    .line 26
     return-void
     .line 27
     .line 28
