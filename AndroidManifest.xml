@@ -40,15 +40,9 @@
     <!-- Permite que o usuário compre itens no Google Play usando este app. -->
     <uses-permission
         android:name="com.android.vending.BILLING" />
-    <!-- Permite que um app editor acesse um ID de publicidade válido direta ou indiretamente. -->
-    <uses-permission
-        android:name="com.google.android.gms.permission.AD_ID" />
     <!-- Permite que o app mostre notificações -->
     <uses-permission
         android:name="android.permission.POST_NOTIFICATIONS" />
-    <!-- Permite que um aplicativo tenha acesso à API AdId. -->
-    <uses-permission
-        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
     <queries>
         <intent>
             <action
@@ -111,12 +105,6 @@
     <!-- Permite que o app use hardware de impressão digital para autenticação. -->
     <uses-permission
         android:name="android.permission.USE_FINGERPRINT" />
-    <!-- Permite que um aplicativo tenha acesso a APIs AdServices Attribution. -->
-    <uses-permission
-        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
-    <!-- Permite que um aplicativo tenha acesso à API AdServices Topics. -->
-    <uses-permission
-        android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
     <!-- Permite que este app leia dados de configuração do serviço do Google. -->
     <uses-permission
         android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
@@ -126,15 +114,9 @@
     <!-- Permite que o app acesse informações sobre redes Wi-Fi, como a ativação do Wi-Fi e o nome dos dispositivos Wi-Fi conectados. -->
     <uses-permission
         android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!-- Permite que o app busque as próprias informações de referência de instalação. -->
-    <uses-permission
-        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
     <!-- Permite que os apps aceitem nuvem para mensagens enviadas pelo serviço do app do dispositivo. Usar esse serviço incorre no uso de dados. Apps maliciosos podem levar a um uso de dados excessivo. -->
     <uses-permission
         android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <!-- Permite que um aplicativo tenha acesso à API AdServices Custom Audience. -->
-    <uses-permission
-        android:name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE" />
     <!-- Permite que o app use serviços em primeiro plano. -->
     <uses-permission
         android:name="android.permission.FOREGROUND_SERVICE" />

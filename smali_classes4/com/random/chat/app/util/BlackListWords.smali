@@ -657,60 +657,16 @@
 
 # virtual methods
 .method public final contains(Ljava/lang/String;)Z
-    .locals 1
+    .locals 0
     .param p1    # Ljava/lang/String;
         .annotation build Lorg/jetbrains/annotations/NotNull;
         .end annotation
     .end param
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 p0, 0x0
 
     .line 2
-    .line 3
-    .line 4
-    invoke-direct {p0}, Lcom/random/chat/app/util/BlackListWords;->words()Ljava/util/List;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p0
-
-    .line 8
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 13
-    .line 14
-    .line 15
-    invoke-virtual {p1, v0}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p0
-
-    .line 26
     return p0
     .line 27
     .line 28
