@@ -5321,7 +5321,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p0, p0, Lcom/random/chat/app/data/entity/UserConfig;->isBanned:Z
+    const/4 p0, 0x0
 
     .line 2
     .line 3
@@ -5347,7 +5347,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p0, p0, Lcom/random/chat/app/data/entity/UserConfig;->isEditImageBlocked:Z
+    const/4 p0, 0x0
 
     .line 2
     .line 3
@@ -5477,7 +5477,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p0, p0, Lcom/random/chat/app/data/entity/UserConfig;->isSearchBlocked:Z
+    const/4 p0, 0x0
 
     .line 2
     .line 3
@@ -5503,7 +5503,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p0, p0, Lcom/random/chat/app/data/entity/UserConfig;->isUploadBlocked:Z
+    const/4 p0, 0x0
 
     .line 2
     .line 3
